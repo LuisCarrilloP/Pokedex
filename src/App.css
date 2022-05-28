@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e5e5e5;
+}
+
+.user-page{
+    text-align: center;
+}
+
+.pokedex-img{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    margin-bottom: 10px;
+}
+
+.pokedex-img img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:600px) {
+    .pokedex-img{
+        top: 25%;
+        height: 20%;
+    }
+}
+
+.user-page h2{
+   color: #FE1936;
+   position: absolute;
+   top: 48%;
+   left: 30%;
+   width: 40%;
+   height: 4%;
+}
+
+.user-page p{
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    width: 50%;
+    font-size: medium;
+}
+
+.input-name-container{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    width: 60%;
+    height: 5%;
+}
+@media screen and (min-width:600px) {
+    .input-name-container{
+        left: 30%;
+        width: 40%;
+    }
+}
+.input-name{
+    width: 70%;
+    height: 100%; 
+    border: none;
+    font-size: 80%;
+    padding: 0 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    opacity: .5;
+}
+
+.go-button{
+    background-color: #d93f3f;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 80%;
+    font-weight: 500;
+    height: 100%; 
+    width: 30%;
+    border: none;
+}
+
+.footer-main{
+    border: 1px solid black;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+}
+
+.red-rectangle{
+    background-color: #DD1A1A ;
+    position: relative;
+    top: 0;
+    height: 55%;
+}
+
+.black-rectangle{
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 45%;
+}
+
+.elipse-container{
+    position: relative;
+    top: -100%;
+    height: 100%;
+}
+
+.outside-elipse{
+    position: relative;
+    top: 10%;
+    width: fit-content;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.outside-elipse img{
+    width: 100%;
+    height: 100%;
+}
+
+.inside-elipse{
+   position: absolute;
+   top: 25%;
+   left: 20%;
+   width: 60%;
+   height: 60%;
+
+}
+
+                                    
+
+
+
+                                    /* POKEDEX PAGE */
+.pokedex-header{
+    border: 1px solid black;
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.pokedex-main{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border: 1px solid tomato;
+    width: 80%;
+}
+
+.pokedex-img-pokedex{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: fit-content;
+    height: 40%;
+}
+
+.pokedex-img-pokedex img{
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-msg{
+    font-size: 20px;
+}
+
+.welcome-msg-span{
+    color: #FE1936;
+    font-weight: 700;
+}
+
+
+                            /* P O K E M O N   C A R D */
+.pokedex-card-container{
+    border: 1px solid blue;
+    width: 96%;
+    text-align: center;
+    margin: 80px auto;
+}
+
+.pokemon-card{
+    border: 5px solid;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    padding: 2rem;
+    text-align: center;
+    margin:5px;
+}
+
+.info-title{
+    color: #9F9F9F;
+}
+
+
+
+
