@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { changeUser } from '../store/slices/user.slice';
 import { useDispatch } from 'react-redux';
-import pokedexName from "../../src/pokedex-banner.svg" /* ó .png */
+import pokedexName from "../../src/pokedex-banner.png" /* .svg ó .png */
 import elipseBlack from "../../src/Ellipse_black.png"
 import elipseWhite from "../../src/Ellipse_white.png"
 
@@ -36,6 +36,7 @@ const UserInput = () => {
                     placeholder='Tu nombre...'
                 />
                 <button onClick={getName} className="go-button">Comenzar</button>
+                
             </div>
 
             <div className='footer-main'>

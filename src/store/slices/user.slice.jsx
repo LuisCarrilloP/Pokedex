@@ -6,7 +6,7 @@ import { createSlice } from '@reduxjs/toolkit'
         name: 'user',
         initialState: "",
         reducers: {
-            changeUser: (state, action) => `${action.payload} Ketchum de pueblo paleta`
+            changeUser: (state, action) => action.payload
             
         }
     })

@@ -10,12 +10,16 @@ function App() {
 
   return (
     <HashRouter>
+                      {/* remover */}
        <div className="App">
-         <nav className='navbar'>
+         {/* <nav className='navbar'>
            <Link to="/" className='text-decoration-none'>Home</Link>
            <Link to="/pokedex" className='text-decoration-none'>Pokedex</Link>
            <Link to="/pokedex/1" className='text-decoration-none'>Pokemon Detail</Link>
-         </nav>
+         </nav> */}
+
+
+         
       <Routes>
         <Route path="/" element={<UserInput />}/>
         <Route element={<ProtectedRoutes />}>
