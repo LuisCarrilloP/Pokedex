@@ -23,7 +23,9 @@ const PokemonDetail = () => {
 
     const [ moves, setMoves ] = useState("")
 
-    const pokemonType = pokemon.types?.[0].type.name
+    const pokemonType = pokemon.types?.[0]?.type.name
+    const pokemonType2 = pokemon.types?.[1]?.type.name
+    
     const pokemonTypeStyle = pokemonType === "normal" ? "#735259"
                             : pokemonType === "fighting" ? "#96402a"
                             : pokemonType === "flying" ? "white"
@@ -44,6 +46,27 @@ const PokemonDetail = () => {
                             : pokemonType === "fairy" ? "#971B45"
                             : pokemonType === "unknown" ? "white"
                             : pokemonType === "shadow" ? "white" : "white"
+    const pokemonType2Style = pokemonType2 === "normal" ? "#735259"
+    : pokemonType2 === "fighting" ? "#96402a"
+    : pokemonType2 === "flying" ? "white"
+    : pokemonType2 === "poison" ? "#ce9bff"
+    : pokemonType2 === "ground" ? "#654008" 
+    : pokemonType2 === "rock" ? "#7E7E7E"
+    : pokemonType2 === "bug" ? "#4AB648"
+    : pokemonType2 === "ghost" ? "#323569"
+    : pokemonType2 === "steel" ? "#5E736C"
+    : pokemonType2 === "fire" ? "#E6901E" 
+    : pokemonType2 === "water" ? "#83B9FF"
+    : pokemonType2 === "grass" ? "#B1DBBC"
+    : pokemonType2 === "electric" ? "#0C1395"
+    : pokemonType2 === "psychic" ? "white"
+    : pokemonType2 === "ice" ? "#6FBEDF"
+    : pokemonType2 === "dragon" ? "#478A93"
+    : pokemonType2 === "dark" ? "#0B0E0D"
+    : pokemonType2 === "fairy" ? "#971B45"
+    : pokemonType2 === "unknown" ? "white"
+    : pokemonType === "shadow" ? "white" : "white"
+
     const pokemonTypeStyle2 = pokemonType === "grass" ? "-webkit-gradient(linear, left top, left bottom, color-stop(0.92%, #7EC6C5), color-stop(47.96%,#ABDAC6), color-stop(99.08%,#CAE099))" : 
                                 pokemonType === "fire" ? "-webkit-gradient(linear, left top, left bottom, color-stop(-32.36%, #F96D6F), color-stop(22.55%,#E35825), color-stop(125.72%,#E8AE1B))" : 
                                 pokemonType === "water" ? "-webkit-gradient(linear, left top, left bottom, color-stop(-70.14%, #133258), color-stop(56.16%,#1479fb), color-stop(214.85%,#82b2f1))" : 
@@ -94,21 +117,21 @@ const PokemonDetail = () => {
                     <img src={pokemon.sprites?.other["official-artwork"]["front_default"]} alt="" width={"250px"} />
                 </div>
                 
-                <p className='pokemon-id'>#{pokemon.id}</p>
+                <p className='pokemon-id' style={{color: pokemonTypeStyle}}>#{pokemon.id}</p>
                 <div className='pokemon-detail-name'>
                     <img src={vector} alt="vector" className='vector'/>
-                    <h3 className='cptlz'>{pokemon.name}</h3>
+                    <h3 className='cptlz' style={{color: pokemonTypeStyle}}>{pokemon.name}</h3>
                     <img src={vector} alt="vector" className='vector'/>
                 </div>
 
                 <div className="pokemon-detail-1row">
                     <div className="pokemon-detail-1row-1">
                         <p><b>Peso</b></p>
-                        <p>{pokemon.weight}</p>
+                        <p style={{color: pokemonTypeStyle}}>{pokemon.weight}</p>
                     </div>
                     <div className="pokemon-detail-1row-2">
                         <p><b>Altura</b></p>
-                        <p>{pokemon.height}</p>
+                        <p style={{color: pokemonTypeStyle}}>{pokemon.height}</p>
                     </div>
                 </div>
 
@@ -117,7 +140,7 @@ const PokemonDetail = () => {
                         <p><b>Tipo</b></p>
                         <div className='pk-dt-rec'>
                             <p className='cptlz' style={{background:pokemonTypeStyle}}>{pokemon.types?.[0]?.type.name}</p>
-                            <p className='cptlz'>{pokemon.types?.[1]?.type.name}</p>
+                            <p className='cptlz' style={{background:pokemonType2Style}}>{pokemon.types?.[1]?.type.name}</p>
                         </div>
                     </div>
                     <div className="pokemon-detail-2row-2">
